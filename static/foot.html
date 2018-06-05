@@ -1,0 +1,16 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: lioders
+ * Date: 18-6-2
+ * Time: 下午1:51
+ */
+
+?>
+<div>
+    <a href="?pageNum=1">首页</a>
+    <a href="?pageNum=<?php echo $pageNum==1?1:($pageNum-1)?>">上一页</a>
+    <a href="?pageNum=<?php echo $pageNum==$endPage?$endPage:($pageNum+1)?>">下一页</a>
+    <a href="?pageNum=<?php echo $endPage?>">尾页</a>
+
+</div>
